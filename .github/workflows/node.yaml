@@ -1,0 +1,13 @@
+name: Install Nodejs
+on:
+    push
+jobs:
+    Node-Install:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repo
+              uses: actions/checkout@v4
+            - name: Install Node JS
+              uses: actions/setup-node@v4
+            - name: Check the node version
+              run: node --version
