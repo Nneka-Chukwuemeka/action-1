@@ -2,7 +2,7 @@ name: Run ascii
 on:
     push
 jobs: 
-    Ascii Cowsay:
+    AsciiCowsay:
         runs-on: [windows-latest, ubuntu-latest]
         steps:
             - name: Checkout the repo
