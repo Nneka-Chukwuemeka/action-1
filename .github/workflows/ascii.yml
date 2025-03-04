@@ -1,0 +1,13 @@
+name: Run ascii
+on:
+    push
+jobs: 
+    Ascii Cowsay:
+        runs-on: [windows-latest, ubuntu-latest]
+        steps:
+            - name: Checkout the repo
+              uses: actions/checkout@v4
+            - name: Execute using shell scripting
+              run: |
+                  chmod + x ./drawascii.sh
+                  ./drawascii.sh
