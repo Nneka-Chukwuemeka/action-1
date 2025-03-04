@@ -9,5 +9,5 @@ jobs:
               uses: actions/checkout@v4
             - name: Execute using shell scripting
               run: |  
-                  chmod + x ./drawascii.sh
+                  chmod +x ./drawascii.sh
                   ./drawascii.sh
